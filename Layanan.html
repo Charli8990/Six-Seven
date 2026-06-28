@@ -9,31 +9,174 @@
 <body>
 
 <!-- NAVBAR -->
-<header class="navbar">
-    <h1>Six Seven</h1>
+<header class="navbar fade-in">
+    <div class="container navbar-inner">
+         <h2 class="logo"> Six Seven ✈</h2>
 
-    <nav>
-        <ul class="nav-list">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <ul class="nav-menu">
             <li><a href="Beranda.html">Beranda</a></li>
-            <li><a href="Layanan.html">Layanan</a></li>
+            <li><a href="Layanan.html" class="active">Layanan</a></li>
             <li><a href="Riwayat.html">Riwayat</a></li>
             <li><a href="Promo.html">Promo</a></li>
             <li><a href="Kontak.html">Kontak</a></li>
         </ul>
-    </nav>
+    </div>
 </header>
 
 <!-- COMING SOON -->
-<section class="coming">
-    <h1>Coming Soon</h1>
-    <p>⏱ Halaman ini masih dalam pengembangan 🕛</p>
+<!-- FORM PEMESANAN -->
+<section class="section">
+    <div class="container">
 
-    <a href="Beranda.html" class="btn-primary">Kembali ke Beranda</a>
+        <h2>Reservasi Tiket Pesawat</h2>
+
+        <form class="booking-form">
+
+            <fieldset>
+
+                <legend>Data Pemesanan</legend>
+
+                <!-- Nama -->
+                <div class="form-group">
+                    <label>Nama Pemesan</label>
+                    <input type="text"
+                        placeholder="Masukkan nama lengkap"
+                        required>
+                </div>
+
+                <!-- No Identitas -->
+                <div class="form-group">
+                    <label>Nomor Identitas</label>
+                    <input type="text"
+                        placeholder="Masukkan No KTP / Paspor"
+                        required>
+                </div>
+
+                <!-- Kota -->
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label>Kota Asal</label>
+
+                        <select required>
+                            <option>Pilih Kota Asal</option>
+                            <option>Jakarta</option>
+                            <option>Surabaya</option>
+                            <option>Medan</option>
+                            <option>Makassar</option>
+                            <option>Denpasar</option>
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label>Kota Tujuan</label>
+
+                        <select required>
+                            <option>Pilih Kota Tujuan</option>
+                            <option>Jakarta</option>
+                            <option>Surabaya</option>
+                            <option>Medan</option>
+                            <option>Makassar</option>
+                            <option>Denpasar</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <!-- Tanggal -->
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label>Tanggal Berangkat</label>
+                        <input type="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Maskapai</label>
+
+                        <select required>
+                            <option>Pilih Maskapai</option>
+                            <option>Garuda Indonesia</option>
+                            <option>Citilink</option>
+                            <option>Batik Air</option>
+                            <option>Lion Air</option>
+                            <option>AirAsia</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <!-- Penumpang -->
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label>Jumlah Penumpang</label>
+
+                        <input
+                            type="number"
+                            min="1"
+                            max="10"
+                            value="1">
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Kelas</label>
+
+                        <select required>
+                            <option>Economy</option>
+                            <option>Premium Economy</option>
+                            <option>Business</option>
+                            <option>First Class</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <!-- Catatan -->
+                <div class="form-group">
+
+                    <label>Catatan Tambahan</label>
+
+                    <textarea
+                        rows="4"
+                        placeholder="Contoh: dekat jendela, makanan vegetarian, dll"></textarea>
+
+                </div>
+
+                <div class="form-buttons">
+
+                    <button class="btn btn-primary" type="submit">
+                        ✈ Pesan Tiket
+                    </button>
+
+                    <button class="btn btn-outline" type="reset">
+                        Reset
+                    </button>
+
+                </div>
+
+            </fieldset>
+
+        </form>
+
+    </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-    <p>© 2026 Six Sevn - Reservasi Tiket Pesawat</p>
+    <p>© 2026 Six Seven - Reservasi Tiket Pesawat</p>
 </footer>
 
 </body>
