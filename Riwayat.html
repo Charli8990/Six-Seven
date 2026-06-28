@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <title>Coming Soon</title>
@@ -8,33 +9,108 @@
 
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <h1>Six Seven</h1>
+    <!-- NAVBAR -->
+    <header class="navbar fade-in">
+        <div class="container navbar-inner">
+            <h2 class="logo"> Six Seven ✈</h2>
 
-    <nav>
-        <ul class="nav-list">
-            <li><a href="Beranda.html">Beranda</a></li>
-            <li><a href="Layanan.html">Layanan</a></li>
-            <li><a href="Riwayat.html" class="active">Riwayat</a></li>
-            <li><a href="Promo.html">Promo</a></li>
-            <li><a href="Kontak.html">Kontak</a></li>
-        </ul>
-    </nav>
-</header>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="Beranda.html">Beranda</a></li>
+                <li><a href="Layanan.html">Layanan</a></li>
+                <li><a href="Riwayat.html" class="active">Riwayat</a></li>
+                <li><a href="Promo.html">Promo</a></li>
+                <li><a href="Kontak.html">Kontak</a></li>
+            </ul>
+            </nav>
+    </header>
 
-<!-- COMING SOON -->
-<section class="coming">
-    <h1>Coming Soon</h1>
-    <p>Halaman ini masih dalam pengembangan</p>
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2>Riwayat Reservasi Tiket</h2>
+                <p class="history-desc"> Daftar seluruh reservasi tiket pesawat yang telah Anda lakukan.</p>
 
-    <a href="Beranda.html" class="btn-primary">Kembali ke Beranda</a>
-</section>
+                <div class="history-toolbar">
+                    <span id="jumlahData">0 Reservasi</span>
+                    <button id="hapusSemua" class="btn btn-outline">🗑 Hapus Semua </button>
+                </div>
 
-<!-- FOOTER -->
-<footer class="footer">
-    <p>© 2026 Six Seven - Reservasi Tiket Pesawat✈️</p>
-</footer>
+                <div class="table-wrapper">
+                    <table class="history-table">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama</th>
+                                <th>Rute</th>
+                                <th>Maskapai</th>
+                                <th>Tanggal</th>
+                                <th>Status</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <!-- Data akan muncul dari JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="emptyState" class="empty-state">
+                    <h3>✈ Belum Ada Riwayat Reservasi</h3>
+                    <p> Silakan melakukan pemesanan tiket terlebih dahulu. </p>
+                    <a href="Layanan.html" class="btn btn-primary"> Reservasi Sekarang </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-main">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h2 class="footer-logo">Six Seven ✈</h2>
+                <p> Platform reservasi tiket pesawat yang cepat, mudah, dan terpercaya.</p>
+            </div>
+
+            <!-- Navigasi -->
+            <div class="footer-col">
+                <h3>Navigasi</h3>
+                <ul>
+                    <li><a href="Beranda.html">Beranda</a></li>
+                    <li><a href="Layanan.html">Layanan</a></li>
+                    <li><a href="Riwayat.html">Riwayat</a></li>
+                    <li><a href="Promo.html">Promo</a></li>
+                    <li><a href="Kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+
+            <!-- Layanan -->
+            <div class="footer-col">
+                <h3>Layanan</h3>
+                <ul>
+                    <li><a href="Layanan.html">Pesan Tiket</a></li>
+                    <li><a href="Riwayat.html">Cek Riwayat</a></li>
+                    <li><a href="Promo.html">Promo Maskapai</a></li>
+                    <li><a href="kontak.html">Informasi Penerbangan</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p> © 2026 Six Seven - Reservasi Tiket Pesawat </p>
+            </div>
+        </div>
+    </footer>
+    </section>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
