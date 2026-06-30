@@ -1,40 +1,233 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
-    <title>Coming Soon</title>
+    <title>Kontak - Six Seven</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <h1>Six Seven</h1>
+    <!-- NAVBAR -->
+    <header class="navbar fade-in">
+        <div class="container navbar-inner">
+            <h2 class="logo">Six Seven ✈</h2>
 
-    <nav>
-        <ul class="nav-list">
-            <li><a href="Beranda.html">Beranda</a></li>
-            <li><a href="Layanan.html">Layanan</a></li>
-            <li><a href="Riwayat.html">Riwayat</a></li>
-            <li><a href="Promo.html">Promo</a></li>
-            <li><a href="Kontak.html" class="active">Kontak</a></li>
-        </ul>
-    </nav>
-</header>
+            <input type="checkbox" id="menu-toggle">
 
-<!-- COMING SOON -->
-<section class="coming">
-    <h1>Coming Soon</h1>
-    <p> 🕛Halaman ini masih dalam pengembangan 🕛</p>
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-    <a href="Beranda.html" class="btn-primary">Kembali ke Beranda</a>
-</section>
+            <ul class="nav-menu">
+                <li><a href="Beranda.html">Beranda</a></li>
+                <li><a href="Layanan.html">Layanan</a></li>
+                <li><a href="Riwayat.html">Riwayat</a></li>
+                <li><a href="Promo.html">Promo</a></li>
+                <li><a href="Kontak.html" class="active">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
 
-<!-- FOOTER -->
-<footer class="footer">
-    <p>© 2026 Six Seven - Reservasi Tiket Pesawat</p>
-</footer>
+    <!-- KONTEN -->
+    <main>
+
+        <section class="section contact-section">
+            <div class="container">
+
+                <h2>Hubungi Kami</h2>
+                <p class="contact-desc">
+                    Tim Six Seven siap membantu Anda terkait reservasi tiket,
+                    informasi penerbangan, perubahan jadwal, maupun pertanyaan lainnya.
+                </p>
+
+                <!-- INFORMASI KONTAK -->
+                <div class="contact-grid fade-in">
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Telepon</h3>
+                        <p>+62 812-3456-7890</p>
+                        <span>Hubungi kami untuk bantuan reservasi tiket.</span>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>support@sixseven.com</p>
+                        <span>Kirim pertanyaan atau keluhan melalui email resmi.</span>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Alamat</h3>
+                        <p>Jl. Thamrin No.123</p>
+                        <span>Medan, Sumatera Utara.</span>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">🕒</div>
+                        <h3>Jam Operasional</h3>
+                        <p>Senin - Minggu</p>
+                        <span>08.00 - 21.00 WIB</span>
+                    </div>
+                </div>
+
+                    <!-- FORM HUBUNGI KAMI -->
+                    <form class="booking-form fade-in">
+
+                        <fieldset>
+
+                            <h2 class="contact-form-title">Form Hubungi Kami</h2>
+
+                            <!-- Nama -->
+                            <div class="form-group">
+                                <label>Nama Lengkap</label>
+                                <input type="text" placeholder="Masukkan nama lengkap" required>
+                            </div>
+
+                            <!-- Email & Nomor HP -->
+                            <div class="form-row">
+
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" placeholder="Masukkan email" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Nomor Telepon</label>
+                                    <input type="tel" placeholder="Masukkan nomor telepon" required>
+                                </div>
+
+                            </div>
+
+                            <!-- Subjek -->
+                            <div class="form-group">
+                                <label>Subjek</label>
+
+                                <select required>
+                                    <option>Pilih Subjek</option>
+                                    <option>Informasi Reservasi</option>
+                                    <option>Perubahan Jadwal</option>
+                                    <option>Pembatalan Tiket</option>
+                                    <option>Keluhan Pelanggan</option>
+                                    <option>Lainnya</option>
+                                </select>
+                            </div>
+
+                            <!-- Pesan -->
+                            <div class="form-group">
+                                <label>Pesan</label>
+
+                                <textarea rows="5" placeholder="Tuliskan pesan atau pertanyaan Anda..."
+                                    required></textarea>
+                            </div>
+
+                            <!-- Tombol -->
+                            <div class="form-buttons">
+
+                                <button type="submit" class="btn btn-primary">
+                                    Kirim Pesan
+                                </button>
+
+                                <button type="reset" class="btn btn-outline">
+                                    Reset
+                                </button>
+
+                            </div>
+
+                        </fieldset>
+
+                    </form>
+
+                    <!-- INFORMASI CUSTOMER SERVICE -->
+                    <div class="contact-info fade-in">
+
+                        <h3>Customer Service Six Seven</h3>
+
+                        <p>
+                            Tim Customer Service Six Seven siap membantu Anda dalam proses
+                            reservasi tiket pesawat, perubahan jadwal penerbangan,
+                            pembatalan tiket, maupun pertanyaan lainnya.
+                        </p>
+
+                        <div class="contact-info-grid">
+
+                            <div class="info-item">
+                                <strong>📞 Telepon</strong>
+                                <p>+62 812-3456-7890</p>
+                            </div>
+
+                            <div class="info-item">
+                                <strong>📧 Email</strong>
+                                <p>support@sixseven.com</p>
+                            </div>
+
+                            <div class="info-item">
+                                <strong>🕒 Jam Operasional</strong>
+                                <p>Senin - Minggu, 08.00 - 21.00 WIB</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-main">
+        <div class="container footer-content">
+
+            <div class="footer-col">
+                <h2 class="footer-logo">Six Seven ✈</h2>
+                <p>
+                    Platform reservasi tiket pesawat yang cepat,
+                    mudah, dan terpercaya.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Navigasi</h3>
+
+                <ul>
+                    <li><a href="Beranda.html">Beranda</a></li>
+                    <li><a href="Layanan.html">Layanan</a></li>
+                    <li><a href="Riwayat.html">Riwayat</a></li>
+                    <li><a href="Promo.html">Promo</a></li>
+                    <li><a href="Kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Layanan</h3>
+
+                <ul>
+                    <li><a href="Layanan.html">Pesan Tiket</a></li>
+                    <li><a href="Riwayat.html">Cek Riwayat</a></li>
+                    <li><a href="Promo.html">Promo Maskapai</a></li>
+                    <li><a href="Kontak.html">Informasi Penerbangan</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 Six Seven - Reservasi Tiket Pesawat</p>
+            </div>
+        </div>
+
+    </footer>
 
 </body>
+
 </html>
