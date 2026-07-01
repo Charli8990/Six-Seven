@@ -564,17 +564,11 @@ body {
     font-weight:bold;
 }
 
-.status.proses{
-    background:#f39c12;
+.status.proses {
+    background-color: greenyellow;
+    color : white;
 }
 
-.status.selesai{
-    background:#2ecc71;
-}
-
-.status.batal{
-    background:#e74c3c;
-}
 
 .btn-detail{
     background:rgb(17,180,225);

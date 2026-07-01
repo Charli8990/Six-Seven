@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <title>Ajukan Layanan</title>
@@ -8,173 +9,207 @@
 
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar fade-in">
-    <div class="container navbar-inner">
-         <h2 class="logo"> Six Seven ✈</h2>
+    <!-- NAVBAR -->
+    <header class="navbar fade-in">
+        <div class="container navbar-inner">
+            <h2 class="logo"> Six Seven ✈</h2>
 
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-        <ul class="nav-menu">
-            <li><a href="Beranda.html">Beranda</a></li>
-            <li><a href="Layanan.html" class="active">Layanan</a></li>
-            <li><a href="Riwayat.html">Riwayat</a></li>
-            <li><a href="Promo.html">Promo</a></li>
-            <li><a href="Kontak.html">Kontak</a></li>
-        </ul>
-    </div>
-</header>
+            <ul class="nav-menu">
+                <li><a href="Beranda.html">Beranda</a></li>
+                <li><a href="Layanan.html" class="active">Layanan</a></li>
+                <li><a href="Riwayat.html">Riwayat</a></li>
+                <li><a href="Promo.html">Promo</a></li>
+                <li><a href="Kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
 
-<!-- COMING SOON -->
-<!-- FORM PEMESANAN -->
-<section class="section">
-    <div class="container">
+    <!-- COMING SOON -->
+    <!-- FORM PEMESANAN -->
+    <section class="section">
+        <div class="container">
 
-        <h2>Reservasi Tiket Pesawat</h2>
+            <h2>Reservasi Tiket Pesawat</h2>
 
-        <form class="booking-form">
+            <form class="booking-form" id="formReservasi">
 
-            <fieldset>
+                <fieldset>
 
-                <legend>Data Pemesanan</legend>
+                    <legend>Data Pemesanan</legend>
 
-                <!-- Nama -->
-                <div class="form-group">
-                    <label>Nama Pemesan</label>
-                    <input type="text"
-                        placeholder="Masukkan nama lengkap"
-                        required>
-                </div>
-
-                <!-- No Identitas -->
-                <div class="form-group">
-                    <label>Nomor Identitas</label>
-                    <input type="text"
-                        placeholder="Masukkan No KTP / Paspor"
-                        required>
-                </div>
-
-                <!-- Kota -->
-                <div class="form-row">
-
+                    <!-- Nama -->
                     <div class="form-group">
-                        <label>Kota Asal</label>
+                        <label>Nama Pemesan</label>
+                        <input type="text" id="nama" name="nama" maxlength="50" placeholder="Masukkan Nama Lengkap"
+                            required>
+                    </div>
 
-                        <select required>
-                            <option>Pilih Kota Asal</option>
-                            <option>Jakarta</option>
-                            <option>Surabaya</option>
-                            <option>Medan</option>
-                            <option>Makassar</option>
-                            <option>Denpasar</option>
-                        </select>
+                    <!-- No Identitas -->
+                    <div class="form-group">
+                        <label>Nomor Identitas</label>
+                        <input type="text" id="identitas" name="identitas" maxlength="16"
+                            placeholder="Masukkan Nomor Identitas" required>
+                    </div>
+
+                    <!-- Kota -->
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label>Kota Asal</label>
+
+                            <select id="asal" name="asal" required>
+                                <option value="">Pilih Kota Asal</option>
+                                <option value="Jakarta">Jakarta</option>
+                                <option value="Surabaya">Surabaya</option>
+                                <option value="Medan">Medan</option>
+                                <option value="Makassar">Makassar</option>
+                                <option value="Denpasar">Denpasar</option>
+                            </select>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label>Kota Tujuan</label>
+
+                            <select id="tujuan" name="tujuan" required>
+                                <option value="">Pilih Kota Tujuan</option>
+                                <option value="Jakarta">Jakarta</option>
+                                <option value="Surabaya">Surabaya</option>
+                                <option value="Medan">Medan</option>
+                                <option value="Makassar">Makassar</option>
+                                <option value="Denpasar">Denpasar</option>
+                            </select>
+
+                        </div>
 
                     </div>
 
-                    <div class="form-group">
-                        <label>Kota Tujuan</label>
+                    <!-- Tanggal -->
+                    <div class="form-row">
 
-                        <select required>
-                            <option>Pilih Kota Tujuan</option>
-                            <option>Jakarta</option>
-                            <option>Surabaya</option>
-                            <option>Medan</option>
-                            <option>Makassar</option>
-                            <option>Denpasar</option>
-                        </select>
+                        <div class="form-group">
+                            <label>Tanggal Berangkat</label>
+                            <input type="date" id="tanggal" name="tanggal" required>
+                        </div>
 
-                    </div>
+                        <div class="form-group">
+                            <label>Maskapai</label>
 
-                </div>
+                            <select id="maskapai" name="maskapai" required>
+                                <option value="">Pilih Maskapai</option>
+                                <option value="Garuda Indonesia">Garuda Indonesia</option>
+                                <option value="Citilink">Citilink</option>
+                                <option value="Batik Air">Batik Air</option>
+                                <option value="Lion Air">Lion Air</option>
+                                <option value="AirAsia">AirAsia</option>
+                            </select>
 
-                <!-- Tanggal -->
-                <div class="form-row">
-
-                    <div class="form-group">
-                        <label>Tanggal Berangkat</label>
-                        <input type="date" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Maskapai</label>
-
-                        <select required>
-                            <option>Pilih Maskapai</option>
-                            <option>Garuda Indonesia</option>
-                            <option>Citilink</option>
-                            <option>Batik Air</option>
-                            <option>Lion Air</option>
-                            <option>AirAsia</option>
-                        </select>
+                        </div>
 
                     </div>
 
-                </div>
+                    <!-- Penumpang -->
+                    <div class="form-row">
 
-                <!-- Penumpang -->
-                <div class="form-row">
+                        <div class="form-group">
+                            <label>Jumlah Penumpang</label>
 
-                    <div class="form-group">
-                        <label>Jumlah Penumpang</label>
+                            <input type="number" id="penumpang" name="penumpang" min="1" max="50"
+                                placeholder="Masukkan jumlah penumpang" required>
+                        </div>
 
-                        <input
-                            type="number"
-                            min="1"
-                            max="10"
-                            value="1">
+                        <div class="form-group">
+
+                            <label>Kelas</label>
+
+                            <select id="kelas" name="kelas" required>
+                                <option value="">Pilih Kelas</option>
+                                <option value="Economy">Economy</option>
+                                <option value="Premium Economy">Premium Economy</option>
+                                <option value="Business">Business</option>
+                                <option value="First Class">First Class</option>
+                            </select>
+
+                        </div>
                     </div>
+                    <br>
+                    <div class="flight-detail">
 
-                    <div class="form-group">
+                        <h4>Detail Penerbangan</h4>
 
-                        <label>Kelas</label>
+                        <p>
+                            <strong>Kota Asal :</strong>
+                            <span id="detailAsal">Belum dipilih</span>
+                        </p>
 
-                        <select required>
-                            <option>Economy</option>
-                            <option>Premium Economy</option>
-                            <option>Business</option>
-                            <option>First Class</option>
-                        </select>
+                        <p>
+                            <strong>Kota Tujuan :</strong>
+                            <span id="detailTujuan">Belum dipilih</span>
+                        </p>
+
+                        <p>
+                            <strong>Maskapai :</strong>
+                            <span id="detailMaskapai">Belum dipilih</span>
+                        </p>
+
+                        <p>
+                            <strong>Kelas :</strong>
+                            <span id="detailKelas">Belum dipilih</span>
+                        </p>
+
+                        <p>
+                            <strong>Harga per Tiket :</strong>
+                            <span id="hargaTiket">-</span>
+                        </p>
+
+                        <p>
+                            <strong>Total Harga :</strong>
+                            <span id="detailHarga">-</span>
+                        </p>
 
                     </div>
+                    <br>
+                    <!-- Catatan -->
+                    <div class="form-group">
 
-                </div>
+                        <!-- Catatan -->
+                        <div class="form-group">
 
-                <!-- Catatan -->
-                <div class="form-group">
+                            <label>Catatan Tambahan</label>
 
-                    <label>Catatan Tambahan</label>
+                            <textarea id="catatan" name="catatan" rows="4"
+                                placeholder="Tambahkan permintaan khusus atau informasi lain yang perlu kami ketahui (opsional).">
+                        </textarea>
 
-                    <textarea
-                        rows="4"
-                        placeholder="Contoh: dekat jendela, makanan vegetarian, dll"></textarea>
+                        </div>
 
-                </div>
+                        <div class="form-buttons">
 
-                <div class="form-buttons">
+                            <button class="btn btn-primary" type="submit" id="btnPesan">
+                                ✈ Pesan Tiket
+                            </button>
 
-                    <button class="btn btn-primary" type="submit">
-                        ✈ Pesan Tiket
-                    </button>
+                            <button class="btn btn-outline" type="reset">
+                                Reset
+                            </button>
 
-                    <button class="btn btn-outline" type="reset">
-                        Reset
-                    </button>
+                        </div>
 
-                </div>
+                </fieldset>
 
-            </fieldset>
+            </form>
 
-        </form>
+        </div>
+    </section>
 
-    </div>
-</section>
-
-<!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="footer-main">
         <div class="container footer-content">
             <div class="footer-col">
@@ -212,6 +247,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
+
 </html>
