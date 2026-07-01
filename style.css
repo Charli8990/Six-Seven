@@ -753,3 +753,53 @@ body {
 }
 
 }
+
+/* ================= PROMO ================= */
+
+.promo-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.promo-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+    transition:.3s;
+    text-align:center;
+}
+
+.promo-card:hover{
+    transform:translateY(-8px);
+}
+
+.promo-card h3{
+    color:rgb(17,180,225);
+    margin-bottom:15px;
+}
+
+.promo-card h4{
+    color:#ff5722;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.promo-card p{
+    color:#555;
+    line-height:1.7;
+    margin-bottom:15px;
+}
+
+.promo-card span{
+    display:block;
+    margin-bottom:20px;
+    font-size:14px;
+    color:#888;
+}
+
+.promo-card .btn{
+    display:inline-block;
+}
