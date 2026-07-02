@@ -449,3 +449,31 @@ if (kelas) {
         penumpang.addEventListener("input", tampilDetailPenerbangan);
     }
 }
+
+
+// =======================================
+// FORM KONTAK
+// =======================================
+
+const formKontak = document.getElementById("formKontak");
+const subjekKontak = document.getElementById("subjekKontak");
+
+if (formKontak) {
+
+    formKontak.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        if (subjekKontak.value == "") {
+            alert("Silakan pilih subjek.");
+            subjekKontak.focus();
+            return;
+        }
+
+        alert("Pesan berhasil dikirim. Terima kasih telah menghubungi Six Seven.");
+
+        formKontak.reset();
+
+    });
+
+}

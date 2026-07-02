@@ -416,7 +416,7 @@ body {
 }
 
 .booking-form fieldset{
-    border:none;
+    border:2px solid #d9d9d9;
     background:white;
     padding:35px;
     border-radius:15px;
@@ -427,7 +427,9 @@ body {
     font-size:28px;
     font-weight:bold;
     color:#169fd7;
-    margin-bottom:20px;
+    padding:0 12px;
+    margin-left:20px;
+    transform: translateY(10px);
 }
 
 .form-group{
@@ -797,6 +799,7 @@ body {
     color:#555;
     line-height:1.7;
     margin-bottom:15px;
+    min-height:60px;
 }
 
 .promo-card span{
