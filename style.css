@@ -24,10 +24,15 @@ body {
 
 /* ================= NAVBAR ================= */
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     background: rgb(17, 180, 225);
     padding: 15px 0;
-
     border: 0 2px 10px rgba(0,0,0,0.1);
+
 }
 
 .navbar-inner {
