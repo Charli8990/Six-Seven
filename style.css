@@ -8,6 +8,7 @@
 body {
     font-family: 'Segoe UI', sans-serif;
     background: rgb(204, 229, 237);
+    padding-top: 40px;
 }
 
 .section h2 {
